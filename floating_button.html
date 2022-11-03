@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		body
+{
+  margin:0;
+  padding:0;
+  background-color: #F50057;
+}
+
+.fab
+{
+  width: 85px;
+    height: 85px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer
+   background-image: url()
+
+    transition: box-shadow ease-in-out 350ms;
+}
+
+.fab:before {
+  content:"+";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+
+    color: #fff;
+    font-size: 3rem;
+    
+    position: absolute;
+    top: 15%;
+    
+    left: 33%;
+}
+
+.fab-content {
+    bottom: -50%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 110%;
+  
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.fab:hover .fab-content,
+.fab .fab-content:hover {
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+.fab .fab-content .fab-link {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 100%;
+    background-color: #fff;
+    margin: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: scaleY(0);
+    transition-timing-function: ease-in;
+    transition-duration: 200ms;
+    
+    transition-property: transform, visibility, opacity;
+}
+
+.fab:hover .fab-content .fab-link,
+.fab .fab-content:hover .fab-link {
+    transform: scaleY(1);
+    
+}
+
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="fab">
+  <ul class="fab-content">
+    <li data-icon="ei-sc-facebook" data-size="m" class="fab-link"></li>
+    <li data-icon="ei-sc-instagram" data-size="m" class="fab-link"></li>
+    <li data-icon="ei-sc-twitter" data-size="m" class="fab-link"></li>
+  </ul>
+</div>
+</body>
+</html>

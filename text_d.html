@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+    h3 {
+    text-shadow: 3px 2px red;
+    }
+    h1 {
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    /* letter-spacing: -3px; */
+    color: red;
+    }
+    h2 {
+    word-spacing: -5px;
+    text-decoration: overline;
+    /* text-decoration: line-through;
+    text-decoration: underline; */
+    /* text-decoration: none; */
+    }
+    p.ex1 {
+    direction: rtl;
+    }
+    p.small {
+    line-height: 0.7;
+    }
+    p.big {
+    line-height: 1.8;
+    }
+    /* p.uppercase {
+    text-transform: uppercase;
+    }
+    p.lowercase {
+    text-transform: lowercase;
+    }
+    p.capitalize {
+    text-transform: capitalize;
+    } */
+    #mydiv {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>Text-shadow effect</h3>
+    
+    <p style = "text-shadow:4px 4px 8px blue;">
+      If your browser supports the CSS text-shadow property,
+      this text will have a  blue shadow.
+    </p>
+    <p>
+      <b>Note:</b> Internet Explorer 9 and earlier do not support the
+      text-shadow property.
+    </p>
+    <!-- Text Direction  -->
+    <p>This is the default text direction.</p>
+    <p class="ex1">
+      <bdo dir="rtl">This is right-to-left text direction.</bdo>
+    </p>
+    <!-- Line Height  -->
+    <p>
+      This is a paragraph with a standard line-height.<br />
+      The default line height in most browsers is about 110% to 120%.<br />
+    </p>
+    <p class="small">
+      This is a paragraph with a smaller line-height.<br />
+      This is a paragraph with a smaller line-height.<br />
+    </p>
+    <p class="big">
+      This is a paragraph with a bigger line-height.<br />
+      This is a paragraph with a bigger line-height.<br />
+    </p>
+    <!-- Text Indentation -->
+    <p style="text-indent: 50px;">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam maxime
+      eveniet iusto esse, recusandae exercitationem reiciendis veritatis ea
+      adipisci, sint aperiam odit voluptas fugit ad maiores eos similique
+      consequatur excepturi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Magnam maxime eveniet iusto esse, recusandae exercitationem
+      reiciendis veritatis ea adipisci, sint aperiam odit voluptas fugit ad
+      maiores eos similique consequatur excepturi!Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Magnam maxime eveniet iusto esse, recusandae
+      exercitationem reiciendis veritatis ea adipisci, sint aperiam odit
+      voluptas fugit ad maiores eos similique consequatur excepturi!
+    </p>
+    <!-- Text align justify -->
+    <div id="mydiv">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </div>
+    <div>
+      <p style = "text-decoration:underline;">
+        This will be underlined
+      </p>
+      
+      <p style = "text-decoration:line-through;">
+        This will be striked through.
+      </p>
+      
+      <p style = "text-decoration:overline;">
+        This will have a over line.
+      </p>
+      
+      <p style = "text-decoration:blink;">
+        This text will have blinking effect
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* universal operator */
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+
+      body {
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+        /* background-color: lightblue; */
+        background-image: url("/images/logo.png");
+        /* background-repeat: repeat-x;
+        background-repeat: repeat-y; */
+        background-repeat: no-repeat;
+        background-position: right top;
+        /* background-attachment: fixed; */
+        background-attachment: scroll;
+      }
+      h1 {
+        background-color: green;
+      }
+
+      div {
+        background-color: red;
+      }
+
+      p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>CSS background-color example!</h1>
+
+      <div>
+        This is a text inside a div element.
+        <p>This paragraph has its own background color.</p>
+        We are still in the div element.
+      </div>
+
+      <p>This page has a light blue background color!</p>
+    </section>
+
+    <section>
+      <article>
+        <h2>CSS background-color</h2>
+        <p>
+          The background-color property specifies the background color of an
+          element.
+        </p>
+        <p>
+          With CSS, a color is most often specified by:<br />
+
+          a valid color name - like "red"<br />
+          a HEX value - like "#ff0000"<br />
+          an RGB value - like "rgb(255,0,0)
+        </p>
+      </article>
+
+      <article>
+        <h2>CSS background-image</h2>
+        <p>
+          The background-image property specifies an image to use as the
+          background of an element.By default, the image is repeated so it
+          covers the entire element.
+        </p>
+      </article>
+
+      <article>
+        <h2>CSS background-repeat</h2>
+        <p>
+          By default, the background-image property repeats an image both
+          horizontally and vertically. Some images should be repeated only
+          horizontally or vertically, or they will look strange, like this:
+        </p>
+      </article>
+
+      <article>
+        <h2>CSS background-repeat</h2>
+        <p>
+          By default, the background-image property repeats an image both
+          horizontally and vertically. To repeat an image vertically, set
+          background-repeat: repeat-y; To repeat an image horizontally, set
+          background-repeat: repeat-x;
+        </p>
+      </article>
+
+      <article>
+        <h2>CSS background-position</h2>
+        <p>
+          The background-position property is used to specify the position of
+          the background image.
+        </p>
+      </article>
+
+      <article>
+        <h2>CSS background-attachment</h2>
+        <p>
+          The background-attachment property specifies whether the background
+          image should scroll or be fixed (will not scroll with the rest of the
+          page):
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
